@@ -1,4 +1,4 @@
-# ashore
+[comment]: <> (# ashore)
 
 
-+ [gongwu](./src/main/gongwu/AREADME.md)
+[comment]: <> (+ [gongwu]&#40;./src/main/gongwu/AREADME.md&#41;)
