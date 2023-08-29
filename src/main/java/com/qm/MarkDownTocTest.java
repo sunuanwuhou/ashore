@@ -15,7 +15,7 @@ public class MarkDownTocTest {
 
     // private static final Logger logger= LoggerFactory.getLogger(MarkDownTocTest.class);
 
-    public static final String PREFIX_MIAN = "/main/gongwu";
+    public static final String PREFIX_MIAN = "/gongwu";
 
     public static void main(String[] args) {
 
