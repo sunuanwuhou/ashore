@@ -13,36 +13,19 @@ import java.io.File;
 public class MarkDownTocTest {
 
 
-    // private static final Logger logger= LoggerFactory.getLogger(MarkDownTocTest.class);
-
-    public static final String PREFIX_MIAN = "/gongwu";
 
     public static void main(String[] args) {
 
         File emptyFile = new File("");
-
-
-        String[] str = new String[]{
-                PREFIX_MIAN,
-        };
-
-        for (String s : str) {
-            StringBuilder sb = new StringBuilder();
-            sb.append(emptyFile.getAbsolutePath());
-            sb.append(s);
-            try {
-                AtxMarkdownToc.newInstance()
-                        .subTree(true)
-                        .genTocDir(sb.toString());
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-
+        StringBuilder sb = new StringBuilder();
+        sb.append(emptyFile.getAbsolutePath());
+        try {
+            AtxMarkdownToc.newInstance()
+                    .subTree(true)
+                    .genTocDir(sb.toString());
+        } catch (Exception e) {
+            System.out.println(e);
         }
-
-        // root = root + "/src/main/学习/8.数据库/Redis/Redis底层数据结构详解.md";
-        // AtxMarkdownToc.newInstance()
-        //         .genTocFile(root);
 
     }
 
